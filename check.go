@@ -1,18 +1,19 @@
 package main
 
 import (
-	"path/filepath"
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 )
 
-func check() string {
+func check() string{
 	if len(os.Args) < 2 {
-		fmt.Println("[ERR]Usage: gcsv <fileName>")
+		fmt.Println("Usage: gcsv <filePath>")
+		os.Exit(1)
+		return ""
 	}
 
-	
 	filePath := os.Args[1]
 	file, err := os.Open(filePath)
 	if err != nil {

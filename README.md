@@ -1,4 +1,4 @@
-# GCSV 📊
+# GCSV 
 
 A lightweight, cross-platform CSV viewer with a modern GUI built in Go using [Fyne ToolKit](https://fyne.io/).
 
@@ -51,8 +51,6 @@ go run . yourfile.csv
 go build -o gcsv
 ./gcsv yourfile.csv
 ```
-
-> 📝 If no file is provided, the app will prompt you to select one using a file dialog.
 
 
 ## 📦 Dependencies
