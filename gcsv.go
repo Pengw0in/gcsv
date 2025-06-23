@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"image/color"
 	"os"
+	"path/filepath"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
@@ -13,19 +14,21 @@ import (
 )
 
 func main() {
-	filename := check()
+	filePath, err := check()
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+        os.Exit(1)
+	}
 	os.Setenv("FYNE_THEME", "light")
 	csvapp := app.New()
 
-	iconPath := "assets/logo.icns"
-	iconFile, err := os.ReadFile(iconPath)
-	if err == nil {
-		iconRes := fyne.NewStaticResource("icon.png", iconFile)
-		csvapp.SetIcon(iconRes)
-	}
 
-	w := csvapp.NewWindow(filename)
-	data := parse()
+	w := csvapp.NewWindow(filepath.Base(filePath))
+	data , err := parse(filePath)
+    if err != nil {
+        fmt.Fprintln(os.Stderr, err)
+        os.Exit(1)
+    }
 
 	totalRows := len(data)
 	totalCols := len(data[0]) + 1

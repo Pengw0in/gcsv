@@ -7,7 +7,7 @@ A lightweight, cross-platform CSV viewer with a modern GUI built in Go using [Fy
 
 ---
 
-## 📸 Preview
+## Preview
 
 > _What GCSV looks like in action:_
 
@@ -16,20 +16,14 @@ A lightweight, cross-platform CSV viewer with a modern GUI built in Go using [Fy
 
 ---
 
-## ✨ Features
 
-- 🖥️ Cross-platform (Windows, macOS, Linux)
-- 📋 Clean and minimal GUI
-- ⚡ Fast loading, even for large CSVs
-
-
-## ✅ Requirements
+##  Requirements
 
 - Go 1.20+
 - OS: Windows, macOS, or Linux
 
 
-## 🚀 Installation
+## Installation
 
 ```bash
 git clone https://github.com/Pengw0in/gcsv.git
@@ -37,7 +31,7 @@ cd gcsv
 go mod tidy
 ```
 
-## 💻 Usage
+## Usage
 
 ### Quick Start (Run directly)
 
@@ -53,11 +47,11 @@ go build -o gcsv
 ```
 
 
-## 📦 Dependencies
+##  Dependencies
 
 - [Fyne](https://fyne.io/) — Cross-platform GUI toolkit for Go
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome!  
 Feel free to open issues or submit pull requests — improvements, fixes, and new features are all appreciated.
