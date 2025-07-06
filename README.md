@@ -1,57 +1,19 @@
-# GCSV 
+# GCSV - CSV Viewer
 
-A lightweight, cross-platform CSV viewer with a modern GUI built in Go using [Fyne ToolKit](https://fyne.io/).
+A simple GUI application for viewing CSV files built with Go and Fyne.
 
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+## Project Information
 
----
-
-## Preview
-
-> _What GCSV looks like in action:_
-
-![screenshot](./assets/demo.png)  
-<!-- Replace with an actual screenshot or animated GIF -->
-
----
-
-
-##  Requirements
-
-- Go 1.20+
-- OS: Windows, macOS, or Linux
-
-
-## Installation
-
-```bash
-git clone https://github.com/Pengw0in/gcsv.git
-cd gcsv
-go mod tidy
-```
+- **Date of Creation**: June 22, 2025
+- **Total Hours Worked**: 3 hours
+- **Language**: GoLang
 
 ## Usage
 
-### Quick Start (Run directly)
-
 ```bash
-go run . yourfile.csv
+go run src/*.go <path-to-csv-file>
 ```
 
-### Build and Run
+## Dependencies
 
-```bash
-go build -o gcsv
-./gcsv yourfile.csv
-```
-
-
-##  Dependencies
-
-- [Fyne](https://fyne.io/) — Cross-platform GUI toolkit for Go
-
-##  Contributing
-
-Contributions are welcome!  
-Feel free to open issues or submit pull requests — improvements, fixes, and new features are all appreciated.
+- Fyne v2.6.1 (GUI framework)
